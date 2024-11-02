@@ -36,10 +36,13 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = Color.FromArgb(254, 248, 232);
+            menuStrip1.Font = new Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point);
             menuStrip1.Items.AddRange(new ToolStripItem[] { contasToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1172, 24);
+            menuStrip1.Padding = new Padding(15, 6, 0, 6);
+            menuStrip1.Size = new Size(1398, 55);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -47,24 +50,29 @@
             // 
             contasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { criarContasToolStripMenuItem });
             contasToolStripMenuItem.Name = "contasToolStripMenuItem";
-            contasToolStripMenuItem.Size = new Size(56, 20);
+            contasToolStripMenuItem.Size = new Size(121, 43);
             contasToolStripMenuItem.Text = "Contas";
             // 
             // criarContasToolStripMenuItem
             // 
+            criarContasToolStripMenuItem.ForeColor = Color.FromArgb(72, 69, 120);
             criarContasToolStripMenuItem.Name = "criarContasToolStripMenuItem";
-            criarContasToolStripMenuItem.Size = new Size(180, 22);
+            criarContasToolStripMenuItem.Size = new Size(256, 44);
             criarContasToolStripMenuItem.Text = "Criar Contas";
             criarContasToolStripMenuItem.Click += criarContasToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(17F, 43F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1172, 643);
+            BackColor = Color.FromArgb(254, 248, 232);
+            ClientSize = new Size(1398, 532);
             Controls.Add(menuStrip1);
+            Font = new Font("Impact", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.FromArgb(1, 182, 139);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(7, 9, 7, 9);
             Name = "FrmPrincipal";
             Text = "Form1";
             menuStrip1.ResumeLayout(false);

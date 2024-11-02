@@ -28,19 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BorderStyle = BorderStyle.FixedSingle;
+            label1.Font = new Font("Impact", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(72, 69, 120);
+            label1.Location = new Point(439, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(249, 62);
+            label1.TabIndex = 0;
+            label1.Text = "Criar Conta";
             // 
             // FrmCriarConta
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1121, 571);
+            BackColor = Color.FromArgb(254, 248, 232);
+            ClientSize = new Size(1183, 643);
+            Controls.Add(label1);
             Name = "FrmCriarConta";
             Text = "FrmCriarConta";
             Load += FrmCriarConta_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }
