@@ -1,3 +1,5 @@
+using PrjAtividadeBancoContas.Demo;
+
 namespace PrjAtividadeBancoContas
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace PrjAtividadeBancoContas
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmPrincipal());
+            //Application.Run(new FrmPrincipal());
+            Application.Run(new frmDemo());
         }
     }
 }
