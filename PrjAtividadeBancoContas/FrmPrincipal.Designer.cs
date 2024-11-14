@@ -31,6 +31,11 @@
             menuStrip1 = new MenuStrip();
             contasToolStripMenuItem = new ToolStripMenuItem();
             criarContasToolStripMenuItem = new ToolStripMenuItem();
+            operaçõesToolStripMenuItem = new ToolStripMenuItem();
+            sacarToolStripMenuItem = new ToolStripMenuItem();
+            depositoToolStripMenuItem = new ToolStripMenuItem();
+            transferirToolStripMenuItem = new ToolStripMenuItem();
+            verSaldoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -38,28 +43,65 @@
             // 
             menuStrip1.BackColor = Color.FromArgb(254, 248, 232);
             menuStrip1.Font = new Font("Impact", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { contasToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { contasToolStripMenuItem, operaçõesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(15, 6, 0, 6);
-            menuStrip1.Size = new Size(1189, 55);
+            menuStrip1.Size = new Size(1189, 31);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // contasToolStripMenuItem
             // 
             contasToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { criarContasToolStripMenuItem });
+            contasToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             contasToolStripMenuItem.Name = "contasToolStripMenuItem";
-            contasToolStripMenuItem.Size = new Size(121, 43);
+            contasToolStripMenuItem.Size = new Size(56, 19);
             contasToolStripMenuItem.Text = "Contas";
             // 
             // criarContasToolStripMenuItem
             // 
             criarContasToolStripMenuItem.ForeColor = Color.FromArgb(72, 69, 120);
             criarContasToolStripMenuItem.Name = "criarContasToolStripMenuItem";
-            criarContasToolStripMenuItem.Size = new Size(256, 44);
+            criarContasToolStripMenuItem.Size = new Size(180, 22);
             criarContasToolStripMenuItem.Text = "Criar Contas";
             criarContasToolStripMenuItem.Click += criarContasToolStripMenuItem_Click;
+            // 
+            // operaçõesToolStripMenuItem
+            // 
+            operaçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sacarToolStripMenuItem, depositoToolStripMenuItem, transferirToolStripMenuItem, verSaldoToolStripMenuItem });
+            operaçõesToolStripMenuItem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            operaçõesToolStripMenuItem.Name = "operaçõesToolStripMenuItem";
+            operaçõesToolStripMenuItem.Size = new Size(78, 19);
+            operaçõesToolStripMenuItem.Text = "Operações";
+            // 
+            // sacarToolStripMenuItem
+            // 
+            sacarToolStripMenuItem.Name = "sacarToolStripMenuItem";
+            sacarToolStripMenuItem.Size = new Size(180, 22);
+            sacarToolStripMenuItem.Text = "Sacar";
+            sacarToolStripMenuItem.Click += sacarToolStripMenuItem_Click;
+            // 
+            // depositoToolStripMenuItem
+            // 
+            depositoToolStripMenuItem.Name = "depositoToolStripMenuItem";
+            depositoToolStripMenuItem.Size = new Size(180, 22);
+            depositoToolStripMenuItem.Text = "Deposito";
+            depositoToolStripMenuItem.Click += depositoToolStripMenuItem_Click;
+            // 
+            // transferirToolStripMenuItem
+            // 
+            transferirToolStripMenuItem.Name = "transferirToolStripMenuItem";
+            transferirToolStripMenuItem.Size = new Size(180, 22);
+            transferirToolStripMenuItem.Text = "Transferir";
+            transferirToolStripMenuItem.Click += transferirToolStripMenuItem_Click;
+            // 
+            // verSaldoToolStripMenuItem
+            // 
+            verSaldoToolStripMenuItem.Name = "verSaldoToolStripMenuItem";
+            verSaldoToolStripMenuItem.Size = new Size(180, 22);
+            verSaldoToolStripMenuItem.Text = "Ver Saldo";
+            verSaldoToolStripMenuItem.Click += verSaldoToolStripMenuItem_Click;
             // 
             // FrmPrincipal
             // 
@@ -86,6 +128,10 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem contasToolStripMenuItem;
         private ToolStripMenuItem criarContasToolStripMenuItem;
-
+        private ToolStripMenuItem operaçõesToolStripMenuItem;
+        private ToolStripMenuItem sacarToolStripMenuItem;
+        private ToolStripMenuItem depositoToolStripMenuItem;
+        private ToolStripMenuItem transferirToolStripMenuItem;
+        private ToolStripMenuItem verSaldoToolStripMenuItem;
     }
 }

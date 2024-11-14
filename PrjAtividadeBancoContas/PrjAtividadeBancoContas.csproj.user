@@ -7,6 +7,18 @@
     <Compile Update="Forms\FrmCriarConta.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FrmDepositar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmSacar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmTransferir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FrmVerSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
