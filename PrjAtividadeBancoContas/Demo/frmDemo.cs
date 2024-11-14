@@ -54,8 +54,8 @@ namespace PrjAtividadeBancoContas.Demo
             //////////////////txtNFor2.Text = cpf.ToString("000.000.000-00");
 
 
-            DateTime data = DateTime.Now;
-            txtNFor.Text = data.ToString("dddd  dd \\de MMMM \\de yyyy  à\\s H:mm:ss");
+            //DateTime data = DateTime.Now;
+            //txtNFor.Text = data.ToString("dddd  dd \\de MMMM \\de yyyy  à\\s H:mm:ss");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
